@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josué Lima</title>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <style>
-        body{
+        body {
             padding: 0px;
-            margin: 0px; 
+            margin: 0px;
             background-image: url(backgroud.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             backdrop-filter: blur(05px 05px);
-                 
+
         }
 
-        nav{
-           position: fixed;
-           top: 0;
+        nav {
+            position: fixed;
+            top: 0;
             height: 55px;
             width: 100%;
             display: flex;
@@ -28,7 +29,7 @@
             background-color: rgb(36, 36, 36);
         }
 
-        nav a{
+        nav a {
             text-decoration: none;
             color: rgb(255, 255, 255);
             margin-right: 30px;
@@ -37,13 +38,13 @@
             border-radius: 5px;
         }
 
-        nav img{
+        nav img {
             max-width: 40px;
             margin-left: 30px;
 
         }
 
-        #logo-nome{
+        #logo-nome {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -52,11 +53,11 @@
             font-size: 13px;
         }
 
-        nav div h1{
+        nav div h1 {
             margin-left: 10px;
         }
 
-        .card{
+        .card {
             margin: auto;
             display: flex;
             flex-direction: column;
@@ -70,32 +71,54 @@
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.61);
             box-shadow: black 5px 6px 21px;
-           
+
         }
 
-        @media (width <= 800px){
-            .card{
+        @media (width <=800px) {
+            .card {
                 width: 85%;
+            }
+        }
+
+        .card {
+            opacity: 0;
+            animation: animacaoTexto 1.8s ease-in-out forwards;
+            position: relative;
+            top: 50px;
+        }
+
+        @keyframes animacaoTexto {
+            0% {
+                opacity: 0;
+                top: 50px;
+            }
+
+            100% {
+                opacity: 1;
+                top: 0px;
             }
         }
     </style>
 </head>
-<body>
-    
-<nav>
-    <div id="logo-nome" >
-        <img src="logo.png" alt="Logo">
-        <h1>Josué Lima</h1>
-    </div>
-    <a target="_blank" href="https://wa.me/5527996550967">Contato</a>
-</nav>
 
-<main>
-    <div class="card">
-        <h1>Progamas</h1>
-        <a href="https://9bac-138-121-116-202.ngrok-free.app">Gerenciador de Igrejas</a>
-    </div>
-</main>
+<body>
+
+    <nav>
+        <div id="logo-nome">
+            <img src="logo.png" alt="Logo">
+            <h1>Josué Lima</h1>
+        </div>
+        <a target="_blank" href="https://wa.me/5527996550967">Contato</a>
+    </nav>
+
+    <main>
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quibusdam, incidunt illum voluptatum
+                voluptatem culpa facilis, adipisci sint, itaque perferendis placeat. Distinctio pariatur laudantium in
+                officia nam. Maiores, cumque neque.</p>
+        </div>
+    </main>
 
 </body>
+
 </html>
