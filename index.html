@@ -46,7 +46,6 @@
 
         #logo-nome {
             display: flex;
-            justify-content: center;
             align-items: center;
             height: 100%;
             color: white;
@@ -103,7 +102,7 @@
 
     <nav>
         <div id="logo-nome">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="Logo"> 
             <h1>Josué Lima</h1>
         </div>
         <a target="_blank" href="https://wa.me/5527996550967">Contato</a>
@@ -111,7 +110,13 @@
 
     <main>
         <div class="card">
-            <h1>Bem Vindo !</h1>
+            <form action="/formulario" method="post">
+                <input type="date" name="data" id="data">
+                <input type="text" name="descricao" id="descricao">
+                <input type="number" name="kminicial" id="kminicial">
+                <input type="number" name="kminicial" id="kminicial">
+                <input type="submit" value="Enviar">
+            </form>
                 
         </div>
 
